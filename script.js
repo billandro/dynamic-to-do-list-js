@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Retreive the add button, task input and task list
     const addButton = document.getElementById("add-task-btn");
-    const taskInput = document.getElementById("task-input").value.trim();
+    const taskInput = document.getElementById("task-input");
     const taskList = document.getElementById("task-list");
 
     // Function to add a task
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
             taskList.appendChild(listElement);
 
             // Clear task input field
-            taskInput.value = "";
+            taskInput.value.trim() = "";
         }
     }
 
